@@ -1,0 +1,23 @@
+{
+  "name": "koajslab",
+  "version": "1.0.0",
+
+  "description": "sample koa.js",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Ramath",
+  "license": "ISC",
+  "devDependencies": {
+    "koa": "^2.13.4"
+  },
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "koa": "^2.13.4",
+    "koa-bodyparser": "^4.3.0",
+    "nodemon": "^2.0.16",
+    "uuid": "^8.3.2"
+  }
+}
