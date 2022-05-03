@@ -1,5 +1,5 @@
 const Koa = require('koa');
-//import HomeRoutes from './routes/home.router.js'
+const HomeRoute = require ('./routes/home.router.js')
 const HomeRoutes = require ('./routes/post.routes.js');
 const bodyParser = require ('koa-bodyparser');
 
@@ -7,7 +7,9 @@ const app = new Koa();
 app.use(bodyParser());
 
 app.use(HomeRoutes.routes())
-    .use(HomeRoutes.allowedMethods());
+    .use(HomeRoutes.allowedMethods())
+    .use(HomeRoute.routes())
+    .use(HomeRoute.allowedMethods());
 
 app.listen(3000);
 
